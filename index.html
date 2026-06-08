@@ -38,23 +38,23 @@
     class="flex flex-col min-h-screen bg-slate-50 text-slate-800 font-sans antialiased selection:bg-brand-500 selection:text-white">
 
     <header class="sticky top-0 z-50 bg-white/70 backdrop-blur-md border-b border-slate-200">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="container max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
             <a href="index.html" class="flex items-center space-x-2 group cursor-pointer">
                 <img src="logo.png" alt="CampusNav Logo"
-                    class="h-12 w-auto group-hover:scale-105 transition-transform" />
-                <h1 class="text-2xl font-extrabold tracking-tight text-slate-900">CampusNav</h1>
+                    class="h-10 w-auto group-hover:scale-105 transition-transform" />
+                <h1 class="text-xl font-extrabold tracking-tight text-slate-900">CampusNav</h1>
             </a>
 
-            <nav class="hidden md:flex items-center space-x-8 font-semibold text-lg text-slate-600">
+            <nav class="hidden md:flex items-center space-x-6 font-semibold text-base text-slate-600">
                 <a href="index.html" class="hover:text-brand-600 transition-colors">Home</a>
                 <a href="#features" class="hover:text-brand-600 transition-colors">Features</a>
                 <a href="#documentation" class="hover:text-brand-600 transition-colors">Documentation</a>
                 <a href="#contactus" class="hover:text-brand-600 transition-colors">Contact Us</a>
                 <div class="flex items-center space-x-4 pl-4 border-l border-slate-200">
                     <a href="login.html"
-                        class="text-slate-600 hover:text-brand-600 px-4 py-2 rounded-xl hover:bg-brand-50 transition-all duration-300">Login</a>
+                        class="text-slate-600 hover:text-brand-600 px-3 py-1.5 text-md rounded-xl hover:bg-brand-50 transition-all duration-300">Login</a>
                     <a href="#"
-                        class="bg-brand-600 text-white px-6 py-2.5 rounded-xl shadow-[0_4px_14px_0_rgb(37,99,235,0.39)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.23)] hover:bg-brand-500 transition-all duration-300 transform hover:-translate-y-0.5">Sign
+                        class="bg-brand-600 text-white px-5 py-2 text-md rounded-xl shadow-[0_4px_14px_0_rgb(37,99,235,0.39)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.23)] hover:bg-brand-500 transition-all duration-300 transform hover:-translate-y-0.5">Sign
                         Up</a>
                 </div>
             </nav>
@@ -89,26 +89,27 @@
     <main class="flex-grow">
 
         <section
-            class="relative overflow-hidden bg-gradient-to-b from-brand-50 to-white pt-10 pb-12 border-b border-slate-100">
+            class="relative overflow-hidden bg-gradient-to-b from-brand-50 to-white pt-8 pb-10 border-b border-slate-100">
             <div
-                class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 rounded-full bg-brand-100 blur-3xl opacity-50 pointer-events-none">
+                class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 rounded-full bg-brand-100 blur-3xl opacity-50 pointer-events-none">
             </div>
 
-            <div class="container mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between">
+            <div
+                class="container max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row items-center justify-between">
 
-                <div class="md:w-1/2 text-center md:text-left mb-12 md:mb-0">
-                    <h2 class="text-5xl md:text-6xl font-extrabold text-slate-900 mb-6 leading-tight tracking-tight">
+                <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0 pr-0 md:pr-4">
+                    <h2 class="text-3xl xl:text-5xl font-extrabold text-slate-900 mb-4 leading-tight tracking-tight">
                         Navigate Your Day <br class="hidden md:block" />
                         <span
                             class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-indigo-600">Uninterrupted</span>
                     </h2>
-                    <p class="text-lg text-slate-600 mb-8 max-w-lg mx-auto md:mx-0">
+                    <p class="text-base text-slate-600 mb-6 max-w-md mx-auto md:mx-0">
                         The ultimate intelligent routing engine. Find the absolute shortest path across campus.
                     </p>
 
                 </div>
 
-                <div class="md:w-1/2 relative">
+                <div class="md:w-1/2 max-w-xl relative mx-auto md:mx-0">
                     <div
                         class="absolute inset-0 bg-gradient-to-tr from-brand-200 to-indigo-200 rounded-2xl transform rotate-3 scale-105 opacity-50 blur-lg">
                     </div>
@@ -120,27 +121,28 @@
             </div>
         </section>
 
-        <section id="features" class="scroll-mt-20 pt-20 pb-24 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <section id="features" class="scroll-mt-16 pt-12 pb-16 bg-white">
+            <div class="container max-w-7xl mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-md transition-shadow">
                         <div
-                            class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3">Algorithmic Routing</h3>
-                        <p class="text-slate-600">Powered by Dijkstra's shortest-path algorithm running on a Node.js
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Algorithmic Routing</h3>
+                        <p class="text-sm text-slate-600">Powered by Dijkstra's shortest-path algorithm running on a
+                            Node.js
                             backend to guarantee the fastest route possible.</p>
                     </div>
 
-                    <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-md transition-shadow">
+                    <div class="p-5 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-md transition-shadow">
                         <div
-                            class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
                                 </path>
@@ -148,22 +150,24 @@
                                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3">Live Geolocation</h3>
-                        <p class="text-slate-600">Utilizes HTML5 Geolocation APIs to track your exact position and
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Live Geolocation</h3>
+                        <p class="text-sm text-slate-600">Utilizes HTML5 Geolocation APIs to track your exact position
+                            and
                             dynamically recalculate paths if you take a wrong turn.</p>
                     </div>
 
                     <div class="p-6 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-md transition-shadow">
                         <div
-                            class="w-12 h-12 bg-rose-100 text-rose-600 rounded-xl flex items-center justify-center mb-6">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            class="w-10 h-10 bg-rose-100 text-rose-600 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z">
                                 </path>
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold text-slate-900 mb-3">Mobile Optimized</h3>
-                        <p class="text-slate-600">Built as a React Single Page Application with Tailwind CSS, ensuring
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">Mobile Optimized</h3>
+                        <p class="text-sm text-slate-600">Built as a React Single Page Application with Tailwind CSS,
+                            ensuring
                             high-contrast visibility when walking outside.</p>
                     </div>
 
@@ -171,18 +175,18 @@
             </div>
         </section>
 
-        <section id="documentation" class="scroll-mt-20 pt-16 pb-24 bg-slate-50">
-            <div class="container mx-auto px-6">
+        <section id="documentation" class="scroll-mt-16 pt-12 pb-16 bg-slate-50">
+            <div class="container max-w-6xl mx-auto px-6">
                 <article
-                    class="prose prose-slate prose-lg mx-auto bg-white p-10 md:p-16 rounded-3xl shadow-sm border border-slate-200">
-                    <h2 class="text-3xl font-bold text-slate-900">System Architecture</h2>
-                    <p class="lead text-slate-600">
+                    class="prose prose-slate prose-md mx-auto bg-white p-10 md:p-12 rounded-3xl shadow-sm border border-slate-200">
+                    <h2 class="text-2.5xl font-bold text-slate-900">System Architecture</h2>
+                    <p class="lead text-base text-slate-600">
                         The Campus Navigation System is engineered to optimize student commutes and eliminate
                         navigational friction across complex university grounds.
                     </p>
-                    <hr class="my-8 border-slate-200" />
-                    <h3 class="text-2xl font-semibold text-slate-800">Database Models</h3>
-                    <p>
+                    <hr class="my-6 border-slate-200" />
+                    <h3 class="text-2xl font-bold text-slate-800">Database Models</h3>
+                    <p class="text-md">
                         We leverage MongoDB's powerful spatial querying capabilities. Building locations and pathways
                         are stored as GeoJSON objects, utilizing <code>2dsphere</code> indexing to allow for rapid
                         proximity calculations.
@@ -195,8 +199,8 @@
     "coordinates": [-73.935242, 40.730610]
   }
 }</code></pre>
-                    <h3 class="text-2xl font-semibold text-slate-800">API Interactivity</h3>
-                    <p>
+                    <h3 class="text-2xl font-bold text-slate-800">API Interactivity</h3>
+                    <p class="text-md">
                         The Express server exposes a RESTful API. When the React client submits a start and end
                         destination, the backend executes our custom pathfinding middleware, returning an ordered array
                         of coordinate waypoints to render the polyline on the frontend map.
@@ -207,8 +211,8 @@
 
     </main>
 
-    <footer class="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
-        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-8">
+    <footer class="bg-slate-900 text-slate-400 py-6 border-t border-slate-800">
+        <div class="container max-w-8xl mx-auto px-20 grid grid-cols-1 md:grid-cols-5 gap-6">
 
             <div class="md:col-span-2">
                 <div class="flex items-center space-x-2 mb-4">
@@ -217,35 +221,35 @@
                             d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7">
                         </path>
                     </svg>
-                    <h3 class="text-white text-2xl font-bold tracking-tight">CampusNav</h3>
+                    <h3 class="text-white text-xl font-bold tracking-tight">CampusNav</h3>
                 </div>
-                <p class="text-base max-w-sm leading-relaxed">An open-source initiative to make campus navigation
+                <p class="text-sm max-w-sm leading-relaxed">An open-source initiative to make campus navigation
                     accessible, efficient,
                     and data-driven. Built with the MERN stack.</p>
             </div>
 
             <div id="contactus" class="flex flex-col space-y-4 text-base">
-                <h4 class="text-white text-lg font-semibold mb-1">Contact Us</h4>
-                <p class="text-base max-w-sm leading-relaxed">Phone : 8523645972 <br> Email : info@campusnav.com</p>
+                <h4 class="text-white text-md font-semibold mb-1">Contact Us</h4>
+                <p class="text-sm max-w-sm leading-relaxed">Phone : 8523645972 <br> Email : info@campusnav.com</p>
             </div>
 
             <div class="flex flex-col space-y-4 text-base">
-                <h4 class="text-white text-lg font-semibold mb-1">Resources</h4>
-                <a href="#" class="hover:text-white transition-colors">GitHub Repository</a>
-                <a href="#" class="hover:text-white transition-colors">API Documentation</a>
-                <a href="#" class="hover:text-white transition-colors">Deployment Guide</a>
+                <h4 class="text-white text-md font-semibold mb-1">Resources</h4>
+                <a href="#" class="text-sm hover:text-white transition-colors">GitHub Repository</a>
+                <a href="#" class="text-sm hover:text-white transition-colors">API Documentation</a>
+                <a href="#" class="text-sm hover:text-white transition-colors">Deployment Guide</a>
             </div>
 
             <div class="flex flex-col space-y-4 text-base">
-                <h4 class="text-white text-lg font-semibold mb-1">Legal</h4>
-                <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
-                <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
-                <a href="#" class="hover:text-white transition-colors">Data Collection</a>
+                <h4 class="text-white text-md font-semibold mb-1">Legal</h4>
+                <a href="#" class="text-sm hover:text-white transition-colors">Privacy Policy</a>
+                <a href="#" class="text-sm hover:text-white transition-colors">Terms of Service</a>
+                <a href="#" class="text-sm hover:text-white transition-colors">Data Collection</a>
             </div>
 
         </div>
         <div
-            class="container mx-auto px-6 pt-8 mt-8 border-t border-slate-800 text-base flex flex-col md:flex-row justify-between items-center">
+            class="container mx-auto px-6 pt-8 mt-8 border-t border-slate-800 text-sm flex flex-col md:flex-row justify-between items-center">
             <p>&copy; 2026 Campus Navigation System. All rights reserved.</p>
         </div>
     </footer>
