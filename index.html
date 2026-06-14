@@ -53,7 +53,7 @@
                 <div class="flex items-center space-x-4 pl-4 border-l border-slate-200">
                     <a href="login.html"
                         class="text-slate-600 hover:text-brand-600 px-3 py-1.5 text-md rounded-xl hover:bg-brand-50 transition-all duration-300">Login</a>
-                    <a href="#"
+                    <a href="login.html#signup"
                         class="bg-brand-600 text-white px-5 py-2 text-md rounded-xl shadow-[0_4px_14px_0_rgb(37,99,235,0.39)] hover:shadow-[0_6px_20px_rgba(37,99,235,0.23)] hover:bg-brand-500 transition-all duration-300 transform hover:-translate-y-0.5">Sign
                         Up</a>
                 </div>
@@ -78,7 +78,7 @@
                 <div class="flex flex-col space-y-4 pt-2">
                     <a href="login.html"
                         class="text-slate-600 hover:text-brand-600 px-4 py-2 text-center rounded-xl hover:bg-brand-50 transition-all duration-300 border border-slate-200">Login</a>
-                    <a href="#"
+                    <a href="login.html#signup"
                         class="bg-brand-600 text-white px-6 py-2.5 text-center rounded-xl shadow-[0_4px_14px_0_rgb(37,99,235,0.39)] hover:bg-brand-500 transition-all duration-300">Sign
                         Up</a>
                 </div>
@@ -174,8 +174,47 @@
                 </div>
             </div>
         </section>
+        <section id="demo-video" class="scroll-mt-16 pt-12 pb-16 bg-white border-t border-slate-100">
+            <div class="container max-w-5xl mx-auto px-6">
+                <div class="text-center mb-10">
+                    <h2 class="text-lg md:text-3xl font-extrabold text-slate-900 mb-4 tracking-tight">See It In Action
+                    </h2>
+                </div>
+                <div
+                    class="max-w-2xl mx-auto relative rounded-xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900 aspect-video group">
+                    <!-- HTML5 Video API -->
+                    <video id="campusVideo" class="w-full h-full object-cover" controls preload="metadata"
+                        poster="logo.png">
+                        <source src="video/campusnav.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
 
-        <section id="documentation" class="scroll-mt-16 pt-12 pb-16 bg-slate-50">
+                    <!-- Custom Play Overlay (Optional, works with JS) -->
+                    <div id="video-overlay"
+                        class="absolute inset-0 bg-slate-900/40 flex items-center justify-center transition-opacity duration-300 pointer-events-none">
+                        <button
+                            class="w-20 h-20 bg-brand-600/90 text-white rounded-full flex items-center justify-center shadow-lg backdrop-blur-sm group-hover:bg-brand-600 transition-transform hover:scale-110 pointer-events-auto"
+                            onclick="document.getElementById('campusVideo').play(); this.parentElement.style.opacity='0';">
+                            <svg class="w-10 h-10 ml-1" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <script>
+                    document.getElementById('campusVideo').addEventListener('play', function () {
+                        document.getElementById('video-overlay').style.opacity = '0';
+                        document.getElementById('video-overlay').style.pointerEvents = 'none';
+                    });
+                    document.getElementById('campusVideo').addEventListener('pause', function () {
+                        document.getElementById('video-overlay').style.opacity = '1';
+                        document.getElementById('video-overlay').style.pointerEvents = 'auto';
+                    });
+                </script>
+            </div>
+        </section>
+
+        <section id="documentation" class="scroll-mt-16 pt-12 pb-16 bg-slate-50 border-t border-slate-200">
             <div class="container max-w-6xl mx-auto px-6">
                 <article
                     class="prose prose-slate prose-md mx-auto bg-white p-10 md:p-12 rounded-3xl shadow-sm border border-slate-200">
